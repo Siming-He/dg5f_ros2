@@ -49,6 +49,82 @@ If the gripper is set to Developer Mode, please make sure that switches ② and 
 | `dg5f_both_pid_all_controller.launch.py` | Both Hands - Single controller for each hand | PID (Position→Effort) |
 | `dg5f_right_effort_controller.launch.py` | DG5F Right - Direct Effort Control | Effort (Direct) |
 | `dg5f_left_effort_controller.launch.py` | DG5F Left - Direct Effort Control | Effort (Direct) |
+| `dg5f_right_mock.launch.py` | DG5F Right - Mock Hardware | Position (Trajectory) |
+| `dg5f_left_mock.launch.py` | DG5F Left - Mock Hardware | Position (Trajectory) |
+| `dg5f_right_mock_effort.launch.py` | DG5F Right - Mock Hardware | Effort (Direct) |
+| `dg5f_left_mock_effort.launch.py` | DG5F Left - Mock Hardware | Effort (Direct) |
+
+---
+
+## Quick Start: Position and Effort Control
+
+Run these commands from a sourced workspace:
+
+```bash
+cd ~/manipulation_ws
+source install/setup.bash
+```
+
+### Right hand, mock hardware
+
+Mock position control uses `JointTrajectoryController` and publishes commands to
+`/dg5f_right/dg5f_right_controller/joint_trajectory`.
+
+```bash
+ros2 launch dg5f_driver dg5f_right_mock.launch.py
+```
+
+Mock effort control uses `JointGroupEffortController` and publishes commands to
+`/dg5f_right/effort_controller/commands`.
+
+```bash
+ros2 launch dg5f_driver dg5f_right_mock_effort.launch.py
+```
+
+### Right hand, real hardware
+
+Set the laptop Ethernet interface on the same subnet as the gripper, verify
+connectivity with `ping`, then launch position or effort control.
+
+```bash
+ping 169.254.186.72
+
+ros2 launch dg5f_driver dg5f_right_driver.launch.py \
+  delto_ip:=169.254.186.72 \
+  delto_port:=502
+
+ros2 launch dg5f_driver dg5f_right_effort_controller.launch.py \
+  delto_ip:=169.254.186.72 \
+  delto_port:=502
+```
+
+### Right hand, tmux helpers
+
+These helpers start the controller, RViz, a status pane, and the GUI command
+panel together:
+
+```bash
+ros2 run dg5f_driver dg5f_right_mock_tmux.sh
+ros2 run dg5f_driver dg5f_right_mock_effort_tmux.sh
+ros2 run dg5f_driver dg5f_right_real_tmux.sh 169.254.186.72
+ros2 run dg5f_driver dg5f_right_effort_tmux.sh 169.254.186.72
+```
+
+To enable fingertip force/torque ROS topics on real hardware:
+
+```bash
+FINGERTIP_SENSOR=true FT_BROADCASTER=true IO=true \
+ros2 run dg5f_driver dg5f_right_effort_tmux.sh 169.254.186.72
+```
+
+### Left hand equivalents
+
+```bash
+ros2 launch dg5f_driver dg5f_left_mock.launch.py
+ros2 launch dg5f_driver dg5f_left_mock_effort.launch.py
+ros2 launch dg5f_driver dg5f_left_driver.launch.py delto_ip:=169.254.186.73
+ros2 launch dg5f_driver dg5f_left_effort_controller.launch.py delto_ip:=169.254.186.73
+```
 
 ---
 
@@ -138,7 +214,7 @@ ros2 launch dg5f_driver dg5f_both_pid_all_controller.launch.py \
 - **Purpose**: Smooth trajectory interpolation for position control
 - **Use Case**: When you need smooth, coordinated finger movements
 - **Input**: Trajectory with multiple waypoints
-- **Topic**: `/<namespace>/delto_controller/joint_trajectory`
+- **Topic**: `/<namespace>/dg5f_right_controller/joint_trajectory` or `/<namespace>/dg5f_left_controller/joint_trajectory`
 
 ### 2. PID Controller (Position → Effort)
 - **Purpose**: Position control with effort output using PID feedback loop
@@ -153,6 +229,7 @@ ros2 launch dg5f_driver dg5f_both_pid_all_controller.launch.py \
 - **Use Case**: Direct force control, impedance control
 - **Input**: Direct effort values for each joint
 - **Topic**: `/<namespace>/effort_controller/commands`
+- **Mock behavior**: validates controller wiring and command publishing without a physical gripper
 
 ### ForceTorqueSensorBroadcaster
 - **Purpose**: Publish fingertip force/torque data
@@ -204,4 +281,3 @@ BSD-3-Clause
 
 ## 📧 Contact
 [TESOLLO SUPPORT](mailto:support@tesollo.com)
-

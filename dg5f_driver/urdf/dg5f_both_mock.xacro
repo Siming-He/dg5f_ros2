@@ -59,101 +59,121 @@
 
         <joint name="rj_dg_1_1">
             <command_interface name="position" />
+            <command_interface name="effort" />
             <state_interface name="position"><param name="initial_value">0.0</param></state_interface>
             <state_interface name="velocity" />
         </joint>
         <joint name="rj_dg_1_2">
             <command_interface name="position" />
+            <command_interface name="effort" />
             <state_interface name="position"><param name="initial_value">0.0</param></state_interface>
             <state_interface name="velocity" />
         </joint>
         <joint name="rj_dg_1_3">
             <command_interface name="position" />
+            <command_interface name="effort" />
             <state_interface name="position"><param name="initial_value">0.0</param></state_interface>
             <state_interface name="velocity" />
         </joint>
         <joint name="rj_dg_1_4">
             <command_interface name="position" />
+            <command_interface name="effort" />
             <state_interface name="position"><param name="initial_value">0.0</param></state_interface>
             <state_interface name="velocity" />
         </joint>
         <joint name="rj_dg_2_1">
             <command_interface name="position" />
+            <command_interface name="effort" />
             <state_interface name="position"><param name="initial_value">0.0</param></state_interface>
             <state_interface name="velocity" />
         </joint>
         <joint name="rj_dg_2_2">
             <command_interface name="position" />
+            <command_interface name="effort" />
             <state_interface name="position"><param name="initial_value">0.0</param></state_interface>
             <state_interface name="velocity" />
         </joint>
         <joint name="rj_dg_2_3">
             <command_interface name="position" />
+            <command_interface name="effort" />
             <state_interface name="position"><param name="initial_value">0.0</param></state_interface>
             <state_interface name="velocity" />
         </joint>
         <joint name="rj_dg_2_4">
             <command_interface name="position" />
+            <command_interface name="effort" />
             <state_interface name="position"><param name="initial_value">0.0</param></state_interface>
             <state_interface name="velocity" />
         </joint>
         <joint name="rj_dg_3_1">
             <command_interface name="position" />
+            <command_interface name="effort" />
             <state_interface name="position"><param name="initial_value">0.0</param></state_interface>
             <state_interface name="velocity" />
         </joint>
         <joint name="rj_dg_3_2">
             <command_interface name="position" />
+            <command_interface name="effort" />
             <state_interface name="position"><param name="initial_value">0.0</param></state_interface>
             <state_interface name="velocity" />
         </joint>
         <joint name="rj_dg_3_3">
             <command_interface name="position" />
+            <command_interface name="effort" />
             <state_interface name="position"><param name="initial_value">0.0</param></state_interface>
             <state_interface name="velocity" />
         </joint>
         <joint name="rj_dg_3_4">
             <command_interface name="position" />
+            <command_interface name="effort" />
             <state_interface name="position"><param name="initial_value">0.0</param></state_interface>
             <state_interface name="velocity" />
         </joint>
         <joint name="rj_dg_4_1">
             <command_interface name="position" />
+            <command_interface name="effort" />
             <state_interface name="position"><param name="initial_value">0.0</param></state_interface>
             <state_interface name="velocity" />
         </joint>
         <joint name="rj_dg_4_2">
             <command_interface name="position" />
+            <command_interface name="effort" />
             <state_interface name="position"><param name="initial_value">0.0</param></state_interface>
             <state_interface name="velocity" />
         </joint>
         <joint name="rj_dg_4_3">
             <command_interface name="position" />
+            <command_interface name="effort" />
             <state_interface name="position"><param name="initial_value">0.0</param></state_interface>
             <state_interface name="velocity" />
         </joint>
         <joint name="rj_dg_4_4">
             <command_interface name="position" />
+            <command_interface name="effort" />
             <state_interface name="position"><param name="initial_value">0.0</param></state_interface>
             <state_interface name="velocity" />
         </joint>
         <joint name="rj_dg_5_1">
             <command_interface name="position" />
+            <command_interface name="effort" />
             <state_interface name="position"><param name="initial_value">0.0</param></state_interface>
             <state_interface name="velocity" />
         </joint>
         <joint name="rj_dg_5_2">
             <command_interface name="position" />
+            <command_interface name="effort" />
             <state_interface name="position"><param name="initial_value">0.0</param></state_interface>
             <state_interface name="velocity" />
         </joint>
         <joint name="rj_dg_5_3">
             <command_interface name="position" />
+            <command_interface name="effort" />
             <state_interface name="position"><param name="initial_value">0.0</param></state_interface>
             <state_interface name="velocity" />
         </joint>
         <joint name="rj_dg_5_4">
             <command_interface name="position" />
+            <command_interface name="effort" />
             <state_interface name="position"><param name="initial_value">0.0</param></state_interface>
             <state_interface name="velocity" />
         </joint>
@@ -169,101 +189,121 @@
 
         <joint name="lj_dg_1_1">
             <command_interface name="position" />
+            <command_interface name="effort" />
             <state_interface name="position"><param name="initial_value">0.0</param></state_interface>
             <state_interface name="velocity" />
         </joint>
         <joint name="lj_dg_1_2">
             <command_interface name="position" />
+            <command_interface name="effort" />
             <state_interface name="position"><param name="initial_value">0.0</param></state_interface>
             <state_interface name="velocity" />
         </joint>
         <joint name="lj_dg_1_3">
             <command_interface name="position" />
+            <command_interface name="effort" />
             <state_interface name="position"><param name="initial_value">0.0</param></state_interface>
             <state_interface name="velocity" />
         </joint>
         <joint name="lj_dg_1_4">
             <command_interface name="position" />
+            <command_interface name="effort" />
             <state_interface name="position"><param name="initial_value">0.0</param></state_interface>
             <state_interface name="velocity" />
         </joint>
         <joint name="lj_dg_2_1">
             <command_interface name="position" />
+            <command_interface name="effort" />
             <state_interface name="position"><param name="initial_value">0.0</param></state_interface>
             <state_interface name="velocity" />
         </joint>
         <joint name="lj_dg_2_2">
             <command_interface name="position" />
+            <command_interface name="effort" />
             <state_interface name="position"><param name="initial_value">0.0</param></state_interface>
             <state_interface name="velocity" />
         </joint>
         <joint name="lj_dg_2_3">
             <command_interface name="position" />
+            <command_interface name="effort" />
             <state_interface name="position"><param name="initial_value">0.0</param></state_interface>
             <state_interface name="velocity" />
         </joint>
         <joint name="lj_dg_2_4">
             <command_interface name="position" />
+            <command_interface name="effort" />
             <state_interface name="position"><param name="initial_value">0.0</param></state_interface>
             <state_interface name="velocity" />
         </joint>
         <joint name="lj_dg_3_1">
             <command_interface name="position" />
+            <command_interface name="effort" />
             <state_interface name="position"><param name="initial_value">0.0</param></state_interface>
             <state_interface name="velocity" />
         </joint>
         <joint name="lj_dg_3_2">
             <command_interface name="position" />
+            <command_interface name="effort" />
             <state_interface name="position"><param name="initial_value">0.0</param></state_interface>
             <state_interface name="velocity" />
         </joint>
         <joint name="lj_dg_3_3">
             <command_interface name="position" />
+            <command_interface name="effort" />
             <state_interface name="position"><param name="initial_value">0.0</param></state_interface>
             <state_interface name="velocity" />
         </joint>
         <joint name="lj_dg_3_4">
             <command_interface name="position" />
+            <command_interface name="effort" />
             <state_interface name="position"><param name="initial_value">0.0</param></state_interface>
             <state_interface name="velocity" />
         </joint>
         <joint name="lj_dg_4_1">
             <command_interface name="position" />
+            <command_interface name="effort" />
             <state_interface name="position"><param name="initial_value">0.0</param></state_interface>
             <state_interface name="velocity" />
         </joint>
         <joint name="lj_dg_4_2">
             <command_interface name="position" />
+            <command_interface name="effort" />
             <state_interface name="position"><param name="initial_value">0.0</param></state_interface>
             <state_interface name="velocity" />
         </joint>
         <joint name="lj_dg_4_3">
             <command_interface name="position" />
+            <command_interface name="effort" />
             <state_interface name="position"><param name="initial_value">0.0</param></state_interface>
             <state_interface name="velocity" />
         </joint>
         <joint name="lj_dg_4_4">
             <command_interface name="position" />
+            <command_interface name="effort" />
             <state_interface name="position"><param name="initial_value">0.0</param></state_interface>
             <state_interface name="velocity" />
         </joint>
         <joint name="lj_dg_5_1">
             <command_interface name="position" />
+            <command_interface name="effort" />
             <state_interface name="position"><param name="initial_value">0.0</param></state_interface>
             <state_interface name="velocity" />
         </joint>
         <joint name="lj_dg_5_2">
             <command_interface name="position" />
+            <command_interface name="effort" />
             <state_interface name="position"><param name="initial_value">0.0</param></state_interface>
             <state_interface name="velocity" />
         </joint>
         <joint name="lj_dg_5_3">
             <command_interface name="position" />
+            <command_interface name="effort" />
             <state_interface name="position"><param name="initial_value">0.0</param></state_interface>
             <state_interface name="velocity" />
         </joint>
         <joint name="lj_dg_5_4">
             <command_interface name="position" />
+            <command_interface name="effort" />
             <state_interface name="position"><param name="initial_value">0.0</param></state_interface>
             <state_interface name="velocity" />
         </joint>

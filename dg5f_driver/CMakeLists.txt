@@ -33,6 +33,12 @@ install(
   script/dg5f_right_pid_test.py
   script/dg5f_left_pid_all_test.py
   script/dg5f_right_pid_all_test.py
+  script/dg5f_right_control_panel.py
+  script/dg5f_right_mock_tmux.sh
+  script/dg5f_right_mock_effort_tmux.sh
+  script/dg5f_right_real_tmux.sh
+  script/dg5f_right_effort_tmux.sh
+  script/dg5f_right_status_watch.sh
   script/manus_retarget/manus_retarget.py
   DESTINATION lib/${PROJECT_NAME}
 )
